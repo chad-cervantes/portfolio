@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chad Cervantes</title>
-</head>
-<style>
-  .hamburger-menu {
-    display: none;
-  }
-  @media screen and (max-width: 50vw) {
+  <style>
+    .navbar ul li a.active {
+      color: black;
+      background: white;
+    }
     .hamburger-menu {
-      display: block;
+      display: none;
     }
-  .navbar {
-      display: block;
+    @media screen and (max-width: 50vw) {
+      .hamburger-menu {
+        display: block;
+      }
+    .navbar {
+        display: block;
+      }
     }
-  }
-</style>
+  </style>
+</head>
 <body>
   <header 
   style=
@@ -76,24 +80,24 @@
         <ul style="
           display: flex;">
           <li style="list-style: none;">
-            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;"  href="#home"  onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
+            <a class="active" style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;"  href="#home"  onmouseover="this.style.background='white'; this.style.color='black'" 
             onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Home</a>
           </li>
           <li style="list-style: none;">
-            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#about"  onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
-            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">About</a>
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#about"  onmouseover="this.style.background='white'; this.style.color='black'" 
+            onmouseout="this.style.background='transparent'; this.style.color='white'">About</a>
           </li>
           <li style="list-style: none;">
-            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#projects" onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
-            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Projects</a>
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#projects" onmouseover="this.style.background='white'; this.style.color='black'" 
+            onmouseout="this.style.background='transparent'; this.style.color='white'">Projects</a>
           </li>
           <li style="list-style: none;">
-            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#skills" onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
-            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Skills</a>
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#skills" onmouseover="this.style.background='white'; this.style.color='black'" 
+            onmouseout="this.style.background='transparent'; this.style.color='white'">Skills</a>
           </li>
           <li style="list-style: none;">
-            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#contact" onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
-            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Contact</a>
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#contact" onmouseover="this.style.background='white'; this.style.color='black'" 
+            onmouseout="this.style.background='transparent'; this.style.color='white'">Contact</a>
           </li>
         </ul>
     </nav>
