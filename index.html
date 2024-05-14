@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chad Cervantes</title>
 </head>
+<style>
+  .hamburger-menu {
+    display: none;
+  }
+  @media screen and (max-width: 50vw) {
+    .hamburger-menu {
+      display: block;
+    }
+  .navbar {
+      display: block;
+    }
+  }
+</style>
 <body>
   <header 
   style=
@@ -15,15 +28,19 @@
       z-index: 100;
       display: flex; 
       justify-content: space-between; 
-      align-items:center;">
+      align-items:center;
+      background: black;">
     <a href="#home" class="logo"
     style=
       "text-decoration: none;
-      margin: 10px;">
+      margin: 10px;
+      font-size: 4vh;
+      font-weight: bold;
+      color: white;">
         Chad Cervantes
     </a> 
     <!--Hamburger Menu Section-->
-    <div class="hanburger-menu"
+    <div class="hamburger-menu" id="hamburger-menu" onclick="menuToggle()"
       style="
       display: flex;
       justify-content: space-around;
@@ -56,11 +73,28 @@
     <nav class="navbar"
     style=
     "padding: 10px;">
-        <ul>
-          <a style="margin: 10px; text-decoration: none;" href="#about">About</a>
-          <a style="margin: 10px; text-decoration: none;" href="#projects">Projects</a>
-          <a style="margin: 10px; text-decoration: none;" href="#skills">Skills</a>
-          <a style="margin: 10px; text-decoration: none;" href="#contact">Contact</a>
+        <ul style="
+          display: flex;">
+          <li style="list-style: none;">
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;"  href="#home"  onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Home</a>
+          </li>
+          <li style="list-style: none;">
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#about"  onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">About</a>
+          </li>
+          <li style="list-style: none;">
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#projects" onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Projects</a>
+          </li>
+          <li style="list-style: none;">
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#skills" onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Skills</a>
+          </li>
+          <li style="list-style: none;">
+            <a style="display: block; color: white; font-size: 2.8vh; margin: 0 5px; padding: 10px 25px; text-decoration: none; border-radius: 6.5vw; transition: 0.3s;" href="#contact" onmouseover="this.style.backgroundColor='white'; this.style.color='black'" 
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">Contact</a>
+          </li>
         </ul>
     </nav>
   </header>
