@@ -3,41 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
   <title>Chad Cervantes</title>
-  <style>
-    .navbar ul li a.active {
-      color: black;
-      background: white;
-    }
-    .hamburger-menu {
-      display: none;
-    }
-    @media only screen and (max-width: 50vw) {
-      header {
-        padding: 0 50px;
-      }
-    }
-    @media only screen and (max-width: 40vw) {
-      header {
-        padding: 0 30px;
-      }
-    }
-    @media only screen and (max-width: 30vw) {
-      .hamburger {
-        display: block;
-        cursor: pointer;
-      }
-      .hamburger .bar {
-        width: 4vw;
-        height: 0.5vh;
-        background: white;
-        margin: 6px 0;
-      }
-      .navbar {
-        display: none;
-      }
-    }
-  </style>
 </head>
 <body>
   <header 
@@ -61,11 +28,20 @@
         Chad Cervantes
     </a> 
     <!--Hamburger Menu Section-->
-    <div class="hamburger">
+    <div class="hamburger" style="display: none; cursor: pointer;">
       <!--Hamburger Menu Icon-->
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <div class="bar" style="width: 4vw;
+        height: 0.5vh;
+        background: white;
+        margin: 6px 0;"></div>
+        <div class="bar" style="width: 4vw;
+        height: 0.5vh;
+        background: white;
+        margin: 6px 0;"></div>
+        <div class="bar" style="width: 4vw;
+        height: 0.5vh;
+        background: white;
+        margin: 6px 0;"></div>
       </div>
     <!--Navigation--> 
     <nav class="navbar"
