@@ -1,10 +1,57 @@
-.navbar ul li a.active {
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex; 
+  justify-content: space-between; 
+  align-items:center;
+  background: black;
+}
+
+.logo {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  padding: 1vw 1vh;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  display: block; 
+  color: white; 
+  font-size: 2.8vh; 
+  margin: 0 5px; 
+  padding: 10px 25px; 
+  border-radius: 6.5vw; 
+  transition: 0.3s
+}
+
+.navbar ul li a:hover {
   color: black;
   background: white;
 }
 
-.hamburger-menu {
-  display: none;
+.navbar ul li a.active {
+  color: black;
+  background: white;
 }
 
 @media screen and (max-width: 50vw) {
@@ -20,9 +67,16 @@
 }
 
 @media screen and (max-width: 30vw) {
-  .hamburger {
+  .hamburger-menu {
     display: block;
     cursor: pointer;
+  }
+
+  .hamburger-menu > .bar {
+    width: 4vw;
+    height: 0.5vh;
+    background: white;
+    margin: 6px 0;
   }
 
   .navbar {
