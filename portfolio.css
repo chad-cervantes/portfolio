@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -85,6 +86,29 @@ header {
  }
 
  .navbar {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100vw;
+  background: black;
+  transition: 0.2s;
+ }
+
+ .navbar ul {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+ }
+
+ .navbar ul li a {
+  margin-bottom: 12px;
+  color: red;
  }
 }
