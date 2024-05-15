@@ -108,39 +108,39 @@ header {
     height: 0.5vh;
     background: white;
     margin: 6px 0;
- }
+  }
 
- .navbar {
-  /* display: none; */
-  position: absolute;
-  top: 80px;
-  left: 0;
-  right: 0;
-  height: 0;
-  width: 100vw;
-  background: black;
-  transition: 0.2s;
- }
+  .navbar {
+    /* display: none; */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100vw;
+    background: black;
+    transition: 0.2s;
+  }
 
- .navbar.active {
-  height: 450px;
- }
+  .navbar.active {
+    height: 450px;
+  }
 
- .navbar ul {
-  display: block;
-  width: fit-content;
-  margin: 80px auto 0 auto;
-  text-align: center;
-  transition: 0.5s;
-  opacity: 0;
-  overflow: hidden;
- }
+  .navbar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
 
- .navbar.active ul {
-  opacity: 1;
- }
+  .navbar.active ul {
+    opacity: 1;
+  }
 
- .navbar ul li a {
-  margin-bottom: 12px;
- }
+  .navbar ul li a {
+    margin-bottom: 12px;
+  }
 }
