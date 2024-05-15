@@ -1,3 +1,53 @@
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 20px;
+}
+
+.self-portrait img {
+  width: 45vw;
+  height: auto;
+  border-radius: 50%;
+}
+
+.text-animation-section {
+  text-align: center;
+}
+
+.text-name {
+  font-size: 10vh;
+}
+
+.wrapper h3 {
+  font-size: 5vh;
+}
+
+.dynamic-texts li span {
+  font-size: 5vh;
+}
+
+.text-summary {
+  font-size: 3vh;
+}
+
+.call-to-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.call-to-actions a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.call-to-actions div {
+  font-size: 30px;
+}
+
 /* Typewrite animation for h1 title */
 .text-name {
   display: inline-block;
@@ -65,5 +115,49 @@
   100% {
     left: 100%;
     margin: 0 -35px 0 35px;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 50rem) {
+  .home-section {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .self-portrait img {
+    width: 50vw; /* Adjust as needed */
+  }
+
+  .text-name {
+    font-size: 8vh;
+  }
+
+  .wrapper h3 {
+    font-size: 4vh;
+  }
+
+  .dynamic-texts li span {
+    font-size: 4vh;
+  }
+
+  .text-summary {
+    font-size: 2.5vh;
+  }
+
+  .call-to-actions a {
+    flex-direction: row;
+    /* margin: auto; */
+    margin-left: 30px;
+  }
+
+  .call-to-actions div {
+    font-size: 25px;
+  }
+
+  .call-to-actions svg {
+    width: 50px;
+    height: 50px;
   }
 }
