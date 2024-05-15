@@ -1,9 +1,14 @@
 // Hamburger Menu Toggle
-hamburgerMenu = document.querySelector(".hamburger-menu")
-hamburgerMenu.onclick = function() {
-  navBar = document.querySelector(".navbar")
-  navBar.classList.toggle("active")
-}
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click event listener to hamburger menu icon
+  document.querySelector('.hamburger-menu').addEventListener('click', function() {
+    // Toggle the 'active' class on the navbar
+    document.querySelector('.navbar').classList.toggle('active');
+    // Toggle the 'closed' class on the menu toggle icon
+    document.querySelector('.hamburger-menu').classList.toggle('closed');
+  });
+});
+
 
 // Highlight that you're on the current page
 const tabs = document.querySelectorAll('.tab');
