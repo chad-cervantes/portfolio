@@ -9,3 +9,26 @@
   scroll-behavior: smooth;
   font-family: "Titillium Web", sans-serif;
 }
+
+/* Typewrite animation for h1 title */
+
+.text-name {
+  display: inline-block;
+  border-right: 3px solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  overflow: hidden;
+  animation: 
+    typing 2s,
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  from, to { border-color: transparent}
+  50% { border-color: black }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
