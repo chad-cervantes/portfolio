@@ -7,6 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle the 'closed' class on the menu toggle icon
     document.querySelector('.hamburger-menu').classList.toggle('closed');
   });
+
+  // Add click event listeners to each menu item
+  document.querySelectorAll('.navbar .tab').forEach(function(menuItem) {
+    menuItem.addEventListener('click', function() {
+      // Remove the 'active' class from the navbar
+      document.querySelector('.navbar').classList.remove('active');
+      // Remove the 'closed' class from the menu toggle icon
+      document.querySelector('.hamburger-menu').classList.remove('closed');
+    });
+  });
 });
 
 
