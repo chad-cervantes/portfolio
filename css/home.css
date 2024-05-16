@@ -52,7 +52,7 @@ path {
   transition: transform 0.2s ease-in-out,color 0.2s ease-in-out;
 }
 
-path:hover {
+path:hover, a:hover {
   color: orangered;
 }
 
