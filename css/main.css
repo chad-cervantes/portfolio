@@ -16,3 +16,9 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
+
+.title {
+  text-align: center; 
+  font-size: 50px;
+  margin-bottom: 30px
+}
