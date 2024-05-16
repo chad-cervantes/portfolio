@@ -41,6 +41,7 @@ img {
 
 .text-summary {
   font-size: 3vh;
+  margin-bottom: 30px;
 }
 
 .call-to-actions {
@@ -57,6 +58,10 @@ img {
 
 .call-to-actions div {
   font-size: 30px;
+}
+
+.resume-title {
+  font-size: 20px;
 }
 
 path {
@@ -169,7 +174,7 @@ path:hover, a:hover {
   .call-to-actions a {
     flex-direction: row;
     /* margin: auto; */
-    margin-left: 30px;
+    margin-right: 60px;
   }
 
   .call-to-actions div {
