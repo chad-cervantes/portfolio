@@ -6,8 +6,8 @@
   padding: 20px;
 }
 
-.self-portrait img {
-  width: 45vw;
+img {
+  width: 30vw;
   height: auto;
   border-radius: 50%;
 }
@@ -126,12 +126,13 @@
     text-align: center;
   }
 
-  .self-portrait img {
-    width: 50vw; /* Adjust as needed */
+  img {
+    width: 70vw; /* Adjust as needed */
+    border-radius: 50%;
   }
 
   .text-name {
-    font-size: 8vh;
+    font-size: 2vh;
   }
 
   .wrapper h3 {
