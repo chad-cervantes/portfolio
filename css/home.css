@@ -48,6 +48,14 @@ img {
   font-size: 30px;
 }
 
+path {
+  transition: transform 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+path:hover {
+  color: orangered;
+}
+
 /* Typewrite animation for h1 title */
 .text-name {
   display: inline-block;
