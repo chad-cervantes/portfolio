@@ -1,0 +1,15 @@
+#about {
+  background: black; 
+  color: white; 
+  margin: auto;
+}
+
+.about-title {
+  text-align: center; 
+  font-size: 50px;
+  margin-bottom: 30px
+}
+
+.about-paragraph {
+  font-size: 20px;
+}
