@@ -10,7 +10,18 @@ img {
   width: 30vw;
   height: auto;
   border-radius: 50%;
+  animation: profile-pic 7s ease-in-out 2s infinite;
 }
+
+@keyframes profile-pic {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 
 .text-animation-section {
   text-align: center;
