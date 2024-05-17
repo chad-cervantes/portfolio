@@ -9,13 +9,14 @@
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  max-width: 130%;
   font-family: "Titillium Web", sans-serif;
 }
 
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
+  max-width: 100%; 
+  overflow-x: hidden;
 }
 
 .title {
@@ -32,13 +33,44 @@ footer {
   background: black;
   color: white;
   margin-top: -50px;
+  max-width: 100%; 
+}
+
+footer .copyright {
+  font-size: large;
+}
+
+footer .up-icon {
+  margin-top: 15px;
 }
 
 footer svg {
   color: white;
+  height: 40px;
 }
 
 footer svg:hover {
   color: orangered;
   transition: 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 50rem) {
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  footer .copyright {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  footer .up-icon {
+    margin: auto;
+  }
+  
+  footer svg {
+    height: 30px;
+    width: 70px;
+  }
+}
+
