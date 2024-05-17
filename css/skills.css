@@ -2,3 +2,19 @@
   background: black;
   color: white;
 }
+
+.skills-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42vh, 1fr)); 
+  align-items: center;
+}
+
+svg {
+  width: 60px;
+}
+
+@media screen and (max-width: 50rem) {
+  svg {
+    width: 60px;
+  }
+}
