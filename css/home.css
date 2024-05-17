@@ -48,7 +48,7 @@ img {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-left: 130px;
+  margin-left: 90px;
   line-height: 0.5;
 }
 
@@ -174,7 +174,7 @@ path:hover, a:hover {
   }
 
   .call-to-actions {
-    margin-left: 80px;
+    margin-left: 40px;
   }
 
   .call-to-actions a {
