@@ -24,3 +24,10 @@ section {
   margin-bottom: 30px;
   margin-top: -60px;
 }
+
+footer {
+  padding: 20px 30px;
+  background: black;
+  color: white;
+  margin-top: -50px;
+}
