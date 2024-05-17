@@ -1,0 +1,60 @@
+.inputs input {
+  width: 30%;
+  border: solid;
+  padding: 11px;
+  font-size: large;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.inputs .email-address input {
+  width: 60%;
+}
+
+.contact-form {
+  margin: auto;
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+
+.contact-form form {
+  margin: auto;
+  text-align: center;
+}
+
+.message textarea {
+  width: 60%;
+  border: solid;
+  padding: 10px;
+  font-size: large;
+}
+
+.submit-button {
+  background: white;
+  border: solid;
+  padding: 11px;
+  font-size: large;
+  margin: auto;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  color: white;
+  background: black;
+  transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 50rem) {
+  .inputs input {
+    width: 80vw;
+  }
+
+  .inputs .email-address input {
+    width: 80vw;
+  }
+
+  .message textarea {
+    width: 80vw;
+  }
+}
