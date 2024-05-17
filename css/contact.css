@@ -32,8 +32,10 @@
 .submit-button {
   background: white;
   border: solid;
+  width: 20%;
   padding: 11px;
   font-size: large;
+  font-weight: bold;
   margin: auto;
   margin-top: 1rem;
   cursor: pointer;
@@ -56,5 +58,9 @@
 
   .message textarea {
     width: 80vw;
+  }
+
+  .submit-button {
+    width: 98%;
   }
 }
