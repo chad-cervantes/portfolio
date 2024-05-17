@@ -26,8 +26,19 @@ section {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 30px;
   background: black;
   color: white;
   margin-top: -50px;
+}
+
+footer svg {
+  color: white;
+}
+
+footer svg:hover {
+  color: orangered;
+  transition: 0.3s ease-in-out;
 }
