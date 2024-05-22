@@ -9,6 +9,20 @@
   align-items: center;
 }
 
+.bubble-bg {
+  position: relative;
+  display: flex;
+}
+
+.bubble-bg span {
+  background: lightblue;
+  width: 30px;
+  height: 30px;
+  margin: 30px;
+  border-radius: 50%;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
 svg {
   width: 60px;
 }
