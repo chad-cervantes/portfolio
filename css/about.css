@@ -13,8 +13,19 @@ p {
   margin: 20px;
 }
 
+#particle-bg canvas {
+  position: absolute;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: auto;
+}
+
 @media screen and (max-width: 50rem) {
   .about-paragraph {
     font-size: 15px;
+  }
+
+  #particle-bg canvas {
+  min-height: 150vh;
   }
 }
