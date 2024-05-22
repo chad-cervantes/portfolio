@@ -9,18 +9,41 @@
   align-items: center;
 }
 
+.title, .icons {
+  z-index: 10;;
+}
+
 .bubble-bg {
   position: relative;
   display: flex;
+  z-index: 1;
 }
 
 .bubble-bg span {
+  position: relative;
   background: lightblue;
   width: 30px;
   height: 30px;
-  margin: 30px;
+  margin: 0 5px;
   border-radius: 50%;
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+  box-shadow: 0 0 0 10px rgb(129, 180, 197), 0 0 50px lightskyblue, 0 0 100px lightskyblue;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+  z-index: 0;
+}
+
+.bubble-bg span:nth-child(even) {
+  background: lightcoral;
+  box-shadow: 0 0 0 10px darkred, 0 0 50px lightcoral, 0 0 100px lightcoral;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(75vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
 }
 
 svg {
