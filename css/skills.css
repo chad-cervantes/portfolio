@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.skills {
+  text-align: center;
+}
+
 .bubble-bg {
   position: relative;
   display: flex;
