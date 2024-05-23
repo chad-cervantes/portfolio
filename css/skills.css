@@ -37,7 +37,7 @@
 
 @keyframes animate {
   0% {
-    transform: translateY(100vh) scale(0);
+    transform: translateY(70vh) scale(0);
   }
   100% {
     transform: translateY(-10vh) scale(1);
@@ -57,5 +57,14 @@ svg {
     width: 20px;
     height: 20px;
     box-shadow: 0 0 0 5px rgb(129, 180, 197), 0 0 30px lightskyblue, 0 0 60px lightskyblue;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(65vh) scale(0.5);
+    }
+    100% {
+      transform: translateY(-10vh) scale(1);
+    }
   }
 }
