@@ -26,6 +26,40 @@ section {
   margin-top: -60px;
 }
 
+.load-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 9999;
+}
+
+.load-spinner-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.load-spinner::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 10px solid orange;
+  border-top-color: lightseagreen;
+  border-radius: 50%;
+  animation: load 0.75s ease-in-out infinite;
+}
+
+@keyframes load {
+  from { transform: rotate(0turn) }
+  to { transform: rotate(1turn)}
+}
+
 footer {
   display: flex;
   justify-content: space-between;
