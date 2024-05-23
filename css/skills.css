@@ -9,10 +9,6 @@
   align-items: center;
 }
 
-.title, .icons {
-  z-index: 10;;
-}
-
 .bubble-bg {
   position: relative;
   display: flex;
@@ -26,7 +22,7 @@
   background: lightblue;
   width: 30px;
   height: 30px;
-  margin: 0 5px;
+  margin: 0 4px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px rgb(129, 180, 197), 0 0 50px lightskyblue, 0 0 100px lightskyblue;
   animation: animate 15s linear infinite;
@@ -41,7 +37,7 @@
 
 @keyframes animate {
   0% {
-    transform: translateY(75vh) scale(0);
+    transform: translateY(100vh) scale(0);
   }
   100% {
     transform: translateY(-10vh) scale(1);
