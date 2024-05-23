@@ -19,6 +19,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Load Spinner
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".load-spinner");
+
+  setTimeout(() => {
+    loader.classList.add("load-spinner-hidden");
+
+    loader.addEventListener("transitionend", () => {
+      if (loader.parentNode) {  // Check if the loader is still in the DOM
+        loader.parentNode.removeChild(loader);
+      }
+    });
+  }, 3000);  // 3000 milliseconds = 3 seconds
+});
 
 // Highlight that you're on the current page
 const tabs = document.querySelectorAll('.tab');
