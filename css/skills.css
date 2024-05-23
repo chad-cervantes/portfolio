@@ -16,6 +16,8 @@
 .bubble-bg {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   z-index: 1;
 }
 
@@ -53,5 +55,11 @@ svg {
 @media screen and (max-width: 50rem) {
   svg {
     width: 60px;
+  }
+
+  .bubble-bg span {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 5px rgb(129, 180, 197), 0 0 30px lightskyblue, 0 0 60px lightskyblue;
   }
 }
