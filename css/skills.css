@@ -41,7 +41,7 @@
 
 @keyframes animate {
   0% {
-    transform: translateY(70vh) scale(0);
+    transform: translateY(65vh) scale(0);
   }
   100% {
     transform: translateY(-10vh) scale(1);
@@ -65,7 +65,7 @@ svg {
 
   @keyframes animate {
     0% {
-      transform: translateY(65vh) scale(0.5);
+      transform: translateY(60vh) scale(0.5);
     }
     100% {
       transform: translateY(-10vh) scale(1);
