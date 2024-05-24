@@ -31,7 +31,7 @@ window.addEventListener("load", () => {
         loader.parentNode.removeChild(loader);
       }
     });
-  }, 3000);  // 3000 milliseconds = 3 seconds
+  }, 2000);  // 2000 milliseconds = 3 seconds
 });
 
 // Highlight that you're on the current page
