@@ -11,12 +11,15 @@ header {
   margin-bottom: 5vh;
 }
 
-.logo {
-  text-decoration: none;
-  margin: 10px;
-  font-size: 4vh;
-  font-weight: bold;
-  color: white;
+.logo img {
+  display: block;
+  width: 150px;
+  height: 85px;
+}
+
+.logo:hover img {
+  opacity: .5;
+  transition: 0.2s ease-in-out;
 }
 
 .hamburger-menu {
