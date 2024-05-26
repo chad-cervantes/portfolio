@@ -104,6 +104,11 @@ header {
     margin: 6px 0;
   }
 
+  .logo img {
+    display: block;
+    margin-left: -31px;
+  }
+
   .navbar {
     display: block;
     position: absolute;
