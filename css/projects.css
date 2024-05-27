@@ -21,6 +21,12 @@
   margin: auto;
 }
 
+.card > .pm {
+  height: 35vh;
+  width: 20vw;
+  margin-top: -20px;
+}
+
 .card > .project-title {
   padding: auto;
   position: absolute;
