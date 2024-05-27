@@ -67,4 +67,9 @@
   .card {
     max-width: 100%;
   }
+
+  .card > .pm {
+    height: 35vh;
+    width: 60vw;
+  }
 }
