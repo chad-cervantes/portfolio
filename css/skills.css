@@ -69,9 +69,8 @@ svg:hover {
   color: black;
  
   padding: .2rem;
-  width: max-content;
-  max-width: 100%;
-  
+  width: auto;
+   
   background: var(--tooltip-color);
   border-radius: .3rem;
   
