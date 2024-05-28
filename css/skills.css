@@ -13,6 +13,29 @@
   text-align: center;
 }
 
+.languages-title, .others-title, .soft-skills-title {
+  margin-bottom: 10px;
+}
+
+.languages-icons, .others-icons {
+  margin-bottom: 35px;
+}
+
+.soft-skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.soft-skills-list-item {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .bubble-bg {
   position: relative;
   display: flex;
@@ -70,5 +93,16 @@ svg {
     100% {
       transform: translateY(-10vh) scale(1);
     }
+  }
+
+  .soft-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+ }
+  
+  .soft-skills-list-item {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 5px;
   }
 }
