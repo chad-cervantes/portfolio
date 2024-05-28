@@ -42,18 +42,13 @@ svg:hover {
   opacity: 0.6;
 }
 
-.html-icon {
+.icon {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-.html-icon {
-  position: relative;
-  display: inline-block;
-}
-
-.html-icon::before, .html-icon::after {
+.icon::before, .icon::after {
   --scale: 0;
   --tooltip-color: white;
   --arrow-size: 7px;
@@ -67,7 +62,7 @@ svg:hover {
   transform-origin: top center;
 }
 
-.html-icon::before {
+.icon::before {
   --translate-y: calc(100% + var(--arrow-size));
   
   content: attr(data-tooltip);
@@ -83,11 +78,11 @@ svg:hover {
   text-align: center;
 }
 
-.html-icon:hover::before, .html-icon:hover::after {
+.icon:hover::before, .icon:hover::after {
   --scale: 1;
 }
 
-.html-icon::after {
+.icon::after {
   --translate-y: var(--arrow-size);
   
   content: '';
