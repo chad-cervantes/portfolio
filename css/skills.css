@@ -36,6 +36,67 @@
   padding: 10px;
 }
 
+/* Icons hover tool tip effect */
+svg:hover {
+  transition: 150ms ease-in-out;
+  opacity: 0.6;
+}
+
+.html-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.html-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.html-icon::before, .html-icon::after {
+  --scale: 0;
+  --tooltip-color: white;
+  --arrow-size: 7px;
+  
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: top center;
+}
+
+.html-icon::before {
+  --translate-y: calc(100% + var(--arrow-size));
+  
+  content: attr(data-tooltip);
+  color: black;
+ 
+  padding: .2rem;
+  width: max-content;
+  max-width: 100%;
+  
+  background: var(--tooltip-color);
+  border-radius: .3rem;
+  
+  text-align: center;
+}
+
+.html-icon:hover::before, .html-icon:hover::after {
+  --scale: 1;
+}
+
+.html-icon::after {
+  --translate-y: var(--arrow-size);
+  
+  content: '';
+  transform-origin: bottom center;
+ 
+  border: var(--arrow-size) solid transparent;
+  border-bottom-color: var(--tooltip-color);
+}
+
 .bubble-bg {
   position: relative;
   display: flex;
