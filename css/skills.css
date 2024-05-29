@@ -3,6 +3,14 @@
   color: white;
 }
 
+.skills-guidance-side-note {
+  font-size: 19px;
+  font-weight: 100 bold;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
 .skills-icon-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(42vh, 1fr)); 
@@ -148,6 +156,14 @@ svg {
     100% {
       transform: translateY(-10vh) scale(1);
     }
+  }
+
+  .skills-guidance-side-note {
+    font-size: 15px;
+    font-weight: 100 bold;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
   }
 
   .soft-skills-list {
