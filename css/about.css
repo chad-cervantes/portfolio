@@ -4,10 +4,6 @@
   margin: auto;
 }
 
-h1 {
-  z-index: ;
-}
-
 .about-paragraph {
   font-size: 20px;
   margin: 2rem 0 4rem;
@@ -32,5 +28,9 @@ p {
 
   #particle-bg canvas {
     min-height: 145vh;
+  }
+
+  p {
+    text-align: center;
   }
 }
