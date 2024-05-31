@@ -47,6 +47,47 @@ tabs.forEach(tab => {
   });
 });
 
+// TARGETS ALL MODALS
+// Step 1: Make variables
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+// Step 2: Make eventListeners
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // dataset can access all of the data attributes as if they're javascript objects
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+// Step 3: Make functions
+function openModal(modal) {
+  if (modal == null) return 
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return 
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
 /* ---- particles.js config ---- */
 
 particlesJS("particle-bg", {
