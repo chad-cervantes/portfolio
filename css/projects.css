@@ -71,6 +71,84 @@
   opacity: 1;
 }
 
+/* Modal */
+.modal {
+  position: fixed;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  z-index: 10;
+
+  background: rgba(0,0,0,.5);
+  background-color: white;
+
+  width: 500px;
+  max-width: 95%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid black;
+}
+
+.modal-header > .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+.modal-header > .close-button {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.modal-header > .close-button:hover {
+  color: red;
+  transition: 150ms ease-in-out;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0;
+  background-color: rgba(0,0,0,.5);
+
+  pointer-events: none;
+
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (max-width: 50rem) {
   .project-guidance-side-note {
     font-size: 15px;
@@ -87,5 +165,10 @@
   .card > .pm {
     height: 35vh;
     width: 60vw;
+  }
+
+  .modal-header > .title {
+    font-size: 15px;
+    font-weight: bolder;
   }
 }
