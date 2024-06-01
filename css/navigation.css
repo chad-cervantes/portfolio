@@ -89,6 +89,10 @@ header {
   header {
     padding: 0 30px;
   }
+
+  .navbar .active {
+    height: 420px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -123,7 +127,7 @@ header {
   }
 
   .navbar.active {
-    height: 410px;
+    height: 400px;
   }
 
   .navbar ul  {
@@ -142,6 +146,8 @@ header {
   }
 
   .navbar ul li a {
-     margin-bottom: 12px;
+     margin-bottom: 5px;
+     font-size: 20px;
+     font-weight: bolder;
   }
 }
