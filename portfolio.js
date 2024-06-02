@@ -47,6 +47,25 @@ tabs.forEach(tab => {
   });
 });
 
+// Up Icon (back to home section)
+document.addEventListener("DOMContentLoaded", function() {
+  const upIcon = document.querySelector('.up-icon');
+
+  function toggleUpIcon() {
+    if (window.scrollY === 0) {
+      upIcon.classList.add('hidden');
+    } else {
+      upIcon.classList.remove('hidden');
+    }
+  }
+
+  // Initial check
+  toggleUpIcon();
+
+  // Add event listener for scroll events
+  window.addEventListener('scroll', toggleUpIcon);
+});
+
 // TARGETS ALL MODALS
 // Step 1: Make variables
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
