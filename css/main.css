@@ -74,18 +74,29 @@ footer .copyright {
   font-size: large;
 }
 
-footer .up-icon {
-  margin-top: 15px;
+.up-icon {
+  display: block;
+  position: fixed;
+  background: black;
+  bottom: 80px;
+  right: 1px;
+  z-index: 30;
+  opacity: 0.8;font-size: 40px;
+  margin: auto;
 }
 
-footer svg {
+.up-icon.hidden {
+  display: none;
+}
+
+.up-icon > svg {
   color: white;
-  height: 40px;
+  height: 30px;
 }
 
-footer svg:hover {
+.up-icon > svg:hover {
   color: orangered;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 50rem) {
@@ -98,13 +109,13 @@ footer svg:hover {
     text-align: center;
   }
   
-  footer .up-icon {
+  /* footer .up-icon {
     margin: auto;
-  }
+  } */
   
-  footer svg {
+  /* footer svg {
     height: 30px;
     width: 70px;
-  }
+  } */
 }
 
