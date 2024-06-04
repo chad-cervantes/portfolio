@@ -71,7 +71,17 @@ footer {
 }
 
 footer .copyright {
-  font-size: large;
+  font-size: larger;
+  display: flex;
+}
+
+.copyright .copyright-logo {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.copyright p {
+  margin-left: 5px;
 }
 
 .up-icon {
@@ -107,8 +117,18 @@ footer .copyright {
   footer .copyright {
     margin-top: 2rem;
     text-align: center;
+    margin: auto;
   }
-  
+
+  .copyright .copyright-logo {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+
+  .copyright p {
+    margin-right: 30px;
+  }
+
   /* footer .up-icon {
     margin: auto;
   } */
