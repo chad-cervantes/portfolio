@@ -188,15 +188,18 @@
 
 .modal-body {
   padding: 10px 15px;
-  /* border-bottom: 1px solid black; */
+  height: 130px;
+  max-height: 100%;
 }
 
-.modal-body > .project-ctas {
+.project-ctas {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 70px;
   gap: 20px;
+  border-top: 1px solid black;
+  padding: 9px;
 }
 
 .project-ctas a {
@@ -265,8 +268,16 @@
     font-weight: bolder;
   }
 
-  .modal-body > .project-ctas {
-    margin-top: 40px;
+  .modal-body {
+    padding: 10px 15px;
+    height: 65px;
+    max-height: 100%;
+  }
+
+  .project-ctas {
+    margin-top: 200px;
+    max-height: 100%;
+    padding: 12px;
   }
 
   .tech-stack .html {
