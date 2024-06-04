@@ -48,6 +48,21 @@
   align-items: center;
 }
 
+/* .project-title > p {
+  margin : 0;
+} */
+
+/* .card > .tech-stack {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+} */
+
+/* .tech-stack > p {
+  margin: 0;
+} */
+
 .card > img, .card > .project-title {
   transition: 200ms ease-in-out;
 }
@@ -63,11 +78,11 @@
 }
 
 /* Text fade */
-.card > .project-title.fade {
+.card > .project-title.fade, .card > .tech-stack.fade {
   opacity: 0;
 }
 
-.card:hover > .project-title.fade {
+.card:hover > .project-title.fade, .card:hover > .tech-stack.fade {
   opacity: 1;
 }
 
@@ -88,7 +103,8 @@
   background: rgba(0,0,0,.5);
   background-color: white;
 
-  width: 500px;
+  width: 700px;
+  height: 410px;
   max-width: 95%;
 }
 
@@ -107,9 +123,36 @@
 }
 
 .modal-header > .title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: auto;
+  margin-top: 30px;
+}
+
+.modal-header .tech-stack {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 0.5rem;
+  margin-top: 10px;
+}
+
+.tech-stack .svelte {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #ff3e00;
+  color: white;
+}
+
+.tech-stack .tailwind-css {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #0f172a;
+  color: #38bdf8;
 }
 
 .modal-header > .close-button {
@@ -118,6 +161,8 @@
   background: none;
   font-size: 1.5rem;
   font-weight: bolder;
+  margin-bottom: 85px;
+  /* right: 10px; */
 }
 
 .modal-header > .close-button:hover {
@@ -127,6 +172,30 @@
 
 .modal-body {
   padding: 10px 15px;
+  border-bottom: 1px solid black;
+}
+
+.modal-body > .project-ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.project-ctas a {
+  display: inline-block; 
+  border: 2px solid black;
+  padding: 10px;
+  text-decoration: none; 
+  color: black; 
+  background-color: white;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.project-ctas a:hover {
+  color: white; 
+  background-color: black;
 }
 
 #overlay {
@@ -165,6 +234,14 @@
   .card > .pm {
     height: 35vh;
     width: 60vw;
+  }
+
+  .modal {
+    height: 500px;
+  }
+
+  .modal-header {
+    height: 120px;
   }
 
   .modal-header > .title {
