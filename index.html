@@ -121,13 +121,39 @@
     </div>
   	<div class="projects-section">
   		<div class="card-grid">
-        <!--Sutaai Project-->
-        <div id="project">
+       <!--Sutaai Project-->
+        <div data-modal-target="#sutaai-modal">
           <div class="card">
-  				  <img class="zoom blur" src="images/CPNT-260-Final-Project-logo.png" alt="Sutaai Knife Co. Logo">
-            <div class="project-title fade">SAIT Vanilla Project | Sutaai Knife Co.</div>
+            <img class="zoom blur" src="images/CPNT-260-Final-Project-logo.png" alt="Sutaai Knife Co. Logo">
+            <div class="project-title fade">
+              <p>SAIT Vanilla Project | Sutaai Knife Co.</p>
+            </div>
           </div>
         </div>
+        <div class="modal" id="sutaai-modal">
+          <div class="modal-header">
+            <div class="title">
+              SAIT Vanilla Project | Sutaai Knife Co.
+              <div class="tech-stack">
+                <div class="html">HTML</div>
+                <div class="css">CSS</div>
+              </div>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            This was the first project that I made using HTML and CSS from the Web Developer program at SAIT. Here's a description of the school project. Sutaai Knife Co. is a renowned company known for crafting high-quality, precision knives. With a commitment to excellence and a focus on innovation, we combine traditional techniques with modern technology to create exceptional products. We offer a range of knives that cater to everyone.
+            <div class="project-ctas">
+              <a class="project-link" href="https://chad-cervantes.github.io/cpnt260-final-project/" target="_blank">
+                Project Link
+              </a>
+              <a class="project-link" href="https://github.com/chad-cervantes/cpnt260-final-project" target="_blank">
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="overlay"></div>
         <!--Capstone Project-->
         <div data-modal-target="#modal">
           <div class="card">
@@ -135,9 +161,6 @@
             <div class="project-title fade">
               <p>SAIT Capstone Project | Common Ground Dance</p>
             </div>
-            <!-- <div class="tech-stack fade">
-              <p>Svelte | Tailwind CSS</p>
-            </div> -->
           </div>
         </div>
         <div class="modal" id="modal">
@@ -152,7 +175,7 @@
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            Common Ground Dance is a vibrant dance studio founded by Vanessa Padillo, an accomplished dancer and entrepreneur. The studio is dedicated to fostering a love for dance in the community, offering classes in various styles such as Ballet, Hip Hop, Contemporary, Jazz, and West African. With a focus on both technique and self-expression, Common Ground Dance is a place where dancers of all ages and skill levels can thrive.
+            Common Ground Dance is a vibrant dance studio founded by Vanessa Padillo, an accomplished dancer and entrepreneur. The studio is dedicated to fostering a love for dance in the community, offering classes in various styles such as Ballet, Hip Hop, Contemporary, Jazz, and West African. With a focus on both technique and self-expression, Common Ground Dance is a place where dancers of all ages and skill levels can thrive. 
             <div class="project-ctas">
                 <a class="project-link" href="https://commongrounddance.netlify.app/" target="_blank">
                   Project Link
