@@ -171,6 +171,14 @@
   color: #38bdf8;
 }
 
+.tech-stack .skeleton-ui {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #423460;
+  color: #ffffff;
+}
+
 .modal-header > .close-button {
   cursor: pointer;
   outline: none;
@@ -313,6 +321,15 @@
     padding: 3px 10px 3px 10px;
     background: #0f172a;
     color: #38bdf8;
+    margin-top: -10px;
+  }
+
+  .tech-stack .skeleton-ui {
+    border: none;
+    border-radius: 50px;
+    padding: 3px 10px 3px 10px;
+    background: #423460;
+    color: #ffffff;
     margin-top: -10px;
   }
 }
