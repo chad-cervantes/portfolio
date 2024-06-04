@@ -124,7 +124,7 @@
 
 .modal-header > .title {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: bolder;
   margin: auto;
   margin-top: 30px;
 }
@@ -172,7 +172,7 @@
 
 .modal-body {
   padding: 10px 15px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .modal-body > .project-ctas {
@@ -237,15 +237,15 @@
   }
 
   .modal {
-    height: 475px;
+    height: 485px;
   }
 
   .modal-header {
-    height: 120px;
+    height: 140px;
   }
 
   .modal-header > .title {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bolder;
   }
 
