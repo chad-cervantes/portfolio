@@ -9,7 +9,7 @@
 .profile-image {
   width: 30vw;
   height: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   animation: profile-pic 7s ease-in-out 2s infinite;
 }
 
@@ -29,11 +29,25 @@
 }
 
 @keyframes profile-pic {
-  0%, 100% {
-    transform: scale(1);
+  0% {
+    border-top-left-radius: 60%;
+    border-top-right-radius: 40% 30%;
+    border-bottom-right-radius: 30% 70%;
+    border-bottom-left-radius: 70% 40%;
   }
+  
   50% {
-    transform: scale(1.1);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 60% 70%;
+    border-bottom-right-radius: 40% 50%;
+    border-bottom-left-radius: 30% 60%;
+  }
+  
+  100% {
+    border-top-left-radius: 60%;
+    border-top-right-radius: 40% 30%;
+    border-bottom-right-radius: 30% 70%;
+    border-bottom-left-radius: 70% 40%;
   }
 }
 
