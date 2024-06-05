@@ -2,10 +2,10 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Make form input variables
-  $first_name = htmlspecialchars($_POST["first_name"]);
-  $last_name = htmlspecialchars($_POST["last_name"]);
-  $email_address = htmlspecialchars($_POST["email_address"]);
-  $message = htmlspecialchars($_POST["message"]);
+  $first_name = htmlspecialchars($_POST['first_name']);
+  $last_name = htmlspecialchars($_POST['last_name']);
+  $email_address = htmlspecialchars($_POST['email_address']);
+  $message = htmlspecialchars($_POST['message']);
 
   //Configure the email
   $to = "chad-daniel.cervantes@outlook.com";
