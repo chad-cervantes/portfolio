@@ -7,11 +7,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email_address = htmlspecialchars($_POST['email_address']);
   $message = htmlspecialchars($_POST['message']);
 
+  //Validate email address
+  if (!filter_var($email_address, FILTER_VALIDATE_EMAIL)) {
+    echo "Invalid email format.";
+    exit;
+  }
+
+  // Ensure all fields are filled
+  if (empty($first_name) || empty($last_name) || empty($email_address) || empty($message)) {
+    echo "All fields are required.";
+    exit;
+  }
+
   //Configure the email
   $to = "chad-daniel.cervantes@outlook.com";
   $subject = "Contact Form Submission from $first_name $last_name";
-  $headers = "From: $email" . "\r\n" .
-             "Reply-To: $email" . "\r\n" .
+  $headers = "From: $email_address\r\n" .
+             "Reply-To: $email_address\r\n" .
              "X-Mailer: PHP/" . phpversion();
   
   $email_message = "First Name: $first_name\n";
