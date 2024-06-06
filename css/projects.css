@@ -155,6 +155,22 @@
   color: white;
 }
 
+.tech-stack .javascript {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #f7e025;
+  color: black;
+}
+
+.tech-stack .php {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #556096;
+  color: white;
+}
+
 .tech-stack .svelte {
   border: none;
   border-radius: 50px;
@@ -302,6 +318,24 @@
     border-radius: 50px;
     padding: 3px 10px 3px 10px;
     background: #2d53e5;
+    color: white;
+    margin-top: -10px;
+  }
+
+  .tech-stack .javascript {
+    border: none;
+    border-radius: 50px;
+    padding: 3px 10px 3px 10px;
+    background: #f7e025;
+    color: black;
+    margin-top: -10px;
+  }
+  
+  .tech-stack .php {
+    border: none;
+    border-radius: 50px;
+    padding: 3px 10px 3px 10px;
+    background: #556096;
     color: white;
     margin-top: -10px;
   }
