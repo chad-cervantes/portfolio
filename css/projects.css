@@ -29,10 +29,11 @@
   margin: auto;
 }
 
+/* SAIT Partner Project */
 .card > .pm {
   height: 35vh;
   width: 20vw;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 
 .card > .project-title {
@@ -274,9 +275,11 @@
     max-width: 100%;
   }
 
+  /* SAIT Partner Project */
   .card > .pm {
     height: 35vh;
     width: 60vw;
+    margin-top: -20px;
   }
 
   .modal {
