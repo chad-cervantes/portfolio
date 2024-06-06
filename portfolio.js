@@ -34,16 +34,43 @@ window.addEventListener("load", () => {
   }, 500);  // 500 milliseconds = 0.5 second
 });
 
-// Highlight that you're on the current page
-const tabs = document.querySelectorAll('.tab');
+// Highlight that you're on the current section; used IntersectionObserver to be on the current when scrolling up or down
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // Remove 'active' class from all tabs
-    tabs.forEach(t => t.classList.remove('active'));
+// const tabs = document.querySelectorAll('.tab');
+
+// tabs.forEach(tab => {
+//   tab.addEventListener('click', () => {
+//     // Remove 'active' class from all tabs
+//     tabs.forEach(t => t.classList.remove('active'));
     
-    // Add 'active' class to the clicked tab
-    tab.classList.add('active');
+//     // Add 'active' class to the clicked tab
+//     tab.classList.add('active');
+//   });
+// });
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.navbar ul li a');
+
+  const options = {
+      root: null,
+      threshold: 0.3,
+  };
+
+  let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              navLinks.forEach(link => {
+                  link.classList.remove('active');
+                  if (link.getAttribute('href').substring(1) === entry.target.id) {
+                      link.classList.add('active');
+                  }
+              });
+          }
+      });
+  }, options);
+
+  sections.forEach(section => {
+      observer.observe(section);
   });
 });
 
