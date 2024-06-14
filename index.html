@@ -242,7 +242,7 @@
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            After I finished the coursework from the Web Developer program at SAIT, I took on an internship with Anime Creators. I had to make an e-commerce page for Alex Pizzey, the owner of Anime Creators, for his platform. I learned how to implement PayPal Integration and use PHP for Registration & Login Verification. It was a great learning experience, especially with the advice Alex gave me from coding to life lessons.
+            After I finished the coursework from the Web Developer program at SAIT, I took on an internship with Anime Creators. I had to make an e-commerce page for Alex Pizzey, the owner of Anime Creators, for his platform. I learned how to implement PayPal Integration and use PHP for Registration & Login Verification. It was a great learning experience, especially with the advice Alex gave me from coding to life lessons. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime deleniti explicabo adipisci sed modi, fugiat neque alias ratione eius veniam similique voluptate pariatur. Ratione quasi ipsa accusantium inventore odio sequi?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, molestias. Soluta, consequuntur sunt fugiat laboriosam quam deserunt hic ab nobis laudantium vitae quis accusamus, consequatur similique mollitia quae veritatis dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet ex quisquam, quidem obcaecati ullam cupiditate, alias quaerat eaque unde dolorum necessitatibus vero quam aperiam voluptatibus exercitationem autem corporis sequi!
           </div>
           <div class="project-ctas">
               <a class="project-link" href="https://animecreators.synology.me/chad-testing/marketplace.html" target="_blank">
@@ -418,22 +418,23 @@
       </div>
     </div>
   </section>
-  <!--Contact Section-->
+  <!-- Contact Section -->
   <section id="contact">
     <h1 class="title">Contact Me!</h1>
     <div class="contact-form">
-       <form action="send_message.php" method="POST">
+      <form id="contactForm" action="C:\xampp\htdocs\portfolio\send_message.php" method="POST">
         <div class="inputs">
           <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
           <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
           <div class="email-address">
-            <input type="text" id="email" name="email_address" placeholder="Email Address" required>
+            <input type="email" id="email" name="email_address" placeholder="Email Address" required>
           </div>
         </div>
         <div class="message">
-          <textarea name="message" id="message" cols="43" rows="10" placeholder="Message" required></textarea>
+          <textarea name="message" cols="43" rows="10" id="message" placeholder="Message" required></textarea>
         </div>
         <button class="submit-button" type="submit"><span>Send Message</span></button>
+        <div id="messageBox" class="message-box"></div>
       </form>
     </div>
   </section>
