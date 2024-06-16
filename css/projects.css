@@ -33,7 +33,12 @@
 .card > .pm {
   height: 35vh;
   width: 20vw;
-  margin-top: -40px;
+  margin-top: -45px;
+}
+
+.project-title.fade > .pm-title {
+  font-size: 30px;
+  margin-top: -45px;
 }
 
 .card > .project-title {
@@ -281,6 +286,11 @@
     height: 35vh;
     width: 60vw;
     margin-top: -20px;
+  }
+
+  .project-title.fade > .pm-title {
+    font-size: 20px;
+    margin: auto;
   }
 
   .modal {
