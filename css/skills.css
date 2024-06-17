@@ -12,13 +12,10 @@
 }
 
 .skills-icon-grid {
+  text-align: center;  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(42vh, 1fr)); 
   align-items: center;
-}
-
-.skills {
-  text-align: center;
 }
 
 .front-end-title, .back-end-title, .others-title, .soft-skills-title {
@@ -27,6 +24,12 @@
 
 .languages-icons, .others-icons {
   margin-bottom: 35px;
+  gap: 0;
+}
+
+.soft-skills-title {
+  text-align: center;
+  margin-top: 50px;
 }
 
 .soft-skills-list {
@@ -166,10 +169,17 @@ svg {
     margin-bottom: 30px;
   }
 
+  .soft-skills-title {
+    text-align: center;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
   .soft-skills-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     gap: 3px;
     margin-top: 15px;
  }
