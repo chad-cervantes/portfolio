@@ -129,7 +129,7 @@ header {
   }
 
   .navbar.active {
-    height: 400px;
+    height: 700px;
     margin-top: -35px;
   }
 
@@ -138,6 +138,7 @@ header {
     text-align: center;
     width: fit-content;
     margin: 80px auto 0 auto;
+    margin-top: 200px;
     opacity: 0;
     transition: 0.5s;
   }
@@ -149,9 +150,9 @@ header {
   }
 
   .navbar ul li a {
-     margin-top: -5px;
-     margin-bottom: 20px;
-     font-size: 20px;
+     margin-top: -45px;
+     margin-bottom: 60px;
+     font-size: 30px;
      font-weight: bolder;
   }
 }
