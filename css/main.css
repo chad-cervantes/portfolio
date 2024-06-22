@@ -17,6 +17,8 @@ section {
   max-width: 100%;
   padding: 10rem 9% 2rem; 
   overflow-x: hidden;
+  background: #111111; 
+  color: white;
 }
 
 .title {
