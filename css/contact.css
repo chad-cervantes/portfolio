@@ -57,52 +57,24 @@
   border-width: 50%;
 }
 
-/* Initial styles for the submit button */
 .submit-button {
-  position: relative;
-  display: inline-block;
   width: 15%;
   padding: 20px 30px;
-  color: black;
-  background: white;
-  border: solid;
+  color: white;
+  background: #111111;
   cursor: pointer;
   overflow: hidden;
-  transition: color 0.3s ease-out;
+  font-size: large;
+  font-weight: bold;
   margin-top: 10px;
-}
-
-/* Psuedo classes for the submit button */
-.submit-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: black;
-  transition: transform 0.3s ease-out;
-  z-index: 0;
-}
-
-.submit-button:hover::before {
-  transform: translateX(100%); /* Slide in from left */
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 .submit-button:hover {
   color: white;
-}
-
-.submit-button span {
-  position: relative;
-  z-index: 1; 
-  transition: color 0.3s ease-out;
-  font-size: large;
-  font-weight: bold;
-}
-
-.submit-button:hover span {
-  color: white;
+  background: orangered;
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 50rem) {
