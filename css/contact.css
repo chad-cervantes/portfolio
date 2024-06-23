@@ -1,10 +1,14 @@
 .inputs input {
   width: 30%;
-  border: solid;
+  border: 3px solid white;
+  border-radius: 10px;
   padding: 11px;
   font-size: large;
   margin: auto;
   margin-bottom: 1rem;
+  background: #111111;
+  color: white;
+  box-shadow: 0 0 10px white;
 }
 
 .inputs .email-address input {
@@ -24,9 +28,33 @@
 
 .message textarea {
   width: 60%;
-  border: solid;
+  border: 3px solid white;
+  border-radius: 10px;
   padding: 10px;
   font-size: large;
+  background: #111111;
+  color: white;
+  box-shadow: 0 0 10px white;
+}
+
+.message-box {
+  display: none;
+  padding: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-width: 50%;
+}
+
+.message-box.success {
+  border-color: green;
+  color: green;
+  border-width: 50%;
+}
+
+.message-box.error {
+  border-color: red;
+  color: red;
+  border-width: 50%;
 }
 
 /* Initial styles for the submit button */
