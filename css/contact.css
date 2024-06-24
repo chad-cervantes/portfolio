@@ -1,3 +1,7 @@
+#contact {
+  background: black;
+}
+
 .inputs input {
   width: 30%;
   border: 3px solid white;
@@ -6,7 +10,7 @@
   font-size: large;
   margin: auto;
   margin-bottom: 1rem;
-  background: #111111;
+  background: black;
   color: white;
   box-shadow: 0 0 10px white;
 }
@@ -32,7 +36,7 @@
   border-radius: 10px;
   padding: 10px;
   font-size: large;
-  background: #111111;
+  background: black;
   color: white;
   box-shadow: 0 0 10px white;
 }
@@ -61,7 +65,7 @@
   width: 15%;
   padding: 20px 30px;
   color: white;
-  background: #111111;
+  background: black;
   cursor: pointer;
   overflow: hidden;
   font-size: large;
@@ -73,8 +77,10 @@
 
 .submit-button:hover {
   color: white;
-  background: orangered;
-  transition: 0.3s ease-in-out;
+  background: linear-gradient(45deg, #ff4500, #f7db4b); /* Gradient from brighter sunset orange to brighter golden yellow */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s ease-in-out;
   box-shadow: 0 0 10px white;
 }
 
