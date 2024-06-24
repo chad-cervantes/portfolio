@@ -1,3 +1,7 @@
+#projects {
+  background: black;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(42vh, 1fr));
