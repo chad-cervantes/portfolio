@@ -2,6 +2,12 @@
   margin: auto;
 }
 
+.title span {
+  background: linear-gradient(45deg, #ff4500, #f7db4b); /* Gradient from brighter sunset orange to brighter golden yellow */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .about-paragraph {
   font-size: 20px;
   margin: 2rem 0 4rem;
