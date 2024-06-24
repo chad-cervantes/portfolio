@@ -1,3 +1,7 @@
+#home {
+  background: black;
+}
+
 .home-section {
   display: flex;
   justify-content: center;
@@ -10,7 +14,6 @@
   display: block;
   width: 30vw;
   height: auto;
-  /* border-radius: 50%; */
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   transition: box-shadow 0.3s ease-in-out;
   animation: profile-pic 10s infinite;
@@ -27,7 +30,8 @@
 
 .resume-title:hover {
   color: white;
-  background-color: orangered;
+  background: orangered;
+  opacity: 0.7;
   transition: 0.2s ease-in-out;
 }
 
@@ -62,6 +66,14 @@
   font-size: 10vh;
 }
 
+.text-name span {
+  background: linear-gradient(45deg, #ff4500, #f7db4b); /* Gradient from brighter sunset orange to brighter golden yellow */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 
+  0 0 5px rgba(255, 165, 0, 0.9)
+}
+
 .wrapper h3 {
   font-size: 5vh;
 }
@@ -89,12 +101,8 @@
   color: inherit;
 }
 
-/* .call-to-actions div {
-  font-size: 30px;
-} */
-
 path {
-  transition: transform 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 path:hover, a:hover {
@@ -123,11 +131,6 @@ path:hover, a:hover {
   to { width: 100% }
 }
 
-/* Animation for the h3 title */
-/* .wrapper {
-  display: inline-flex;
-} */
-
 .wrapper .static-text {
   font-size: 60px;
   font-weight: 400;
@@ -147,6 +150,9 @@ path:hover, a:hover {
 
 .dynamic-texts li span {
   position: relative;
+  background: linear-gradient(45deg, #ff4500, #f7db4b); /* Gradient from brighter sunset orange to brighter golden yellow */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dynamic-texts li span:after {
@@ -154,7 +160,7 @@ path:hover, a:hover {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #111111;
+  background: black;
   border-left: 3px solid orangered;
   top: 0;
   animation: transition 2.5s steps(18) 1;
