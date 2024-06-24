@@ -34,7 +34,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: gray;
+  background: linear-gradient(45deg, #ff4500, #f7db4b);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,10 +51,11 @@ section {
   content: "";
   width: 100px;
   height: 100px;
-  border: 10px solid orange;
-  border-top-color: lightseagreen;
+  border: 10px solid #222222;
+  border-top-color: whitesmoke;
   border-radius: 50%;
   animation: load 0.75s ease-in-out infinite;
+  box-shadow: 0 0 10px white;
 }
 
 @keyframes load {
