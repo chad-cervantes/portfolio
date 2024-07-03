@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('navigation.css');@import url('home.css');
+@import url('about.css');
+@import url('projects.css');
+@import url('skills.css');
+@import url('contact.css');
+
+/*
+VW of project:  9.37vw (937px) 
+VH of project: 7.11vh (711px) 
+*/
 
 *, *::before, *::after {
   margin: 0;
@@ -23,9 +33,9 @@ section {
 
 .title {
   text-align: center; 
-  font-size: 50px;
-  margin-bottom: 30px;
-  margin-top: -60px;
+  font-size: 7vh;
+  margin-bottom: 4vh;
+  margin-top: -8vh;
 }
 
 .load-spinner {
