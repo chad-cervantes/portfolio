@@ -7,49 +7,64 @@
   grid-template-columns: repeat(auto-fit,minmax(42vh, 1fr));
   align-items: flex-start ;
   gap: 1rem;
-  box-sizing: border-box;
 }
 
-.project-guidance-side-note {
+/* .project-guidance-side-note {
   font-size: 19px;
   font-weight: 100 bold;
   text-align: center;
   margin-top: -30px;
   margin-bottom: 30px;
+} */
+
+.pm-card {
+  height: 52.5vh;
 }
 
-.card {
+.card, .pm-card {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 1vw;
+  box-shadow: 0 0 10px white;
+  transition: 200ms ease-in-out;
+  gap: 3rem;
 }
 
-.card > img {
+.card:hover, .pm-card:hover {
+  transform: scale(1.1);
+}
+
+.card-image {
   display: block;
-  width: 50%;
-  aspect-ratio: 1/1;
+  width: 15vw;
+  height: 30vh;
+  aspect-ratio: 16 / 9;
   object-fit: fill;
   object-position: center;
   margin: auto;
 }
 
 /* SAIT Partner Project */
-.card > .pm {
+/* .card > .pm {
   height: 35vh;
   width: 20vw;
   margin-top: -45px;
-}
+} */
 
-.project-title.fade > .pm-title {
-  font-size: 30px;
-  margin-top: -45px;
+.project-title > .pm-title {
+  font-size: 20px;
+  margin-top: 17px;
 }
 
 .card > .project-title {
   padding: auto;
-  position: absolute;
-  inset: 0;
-  font-size: 2rem;
+  /* position: absolute; */
+  /* inset: 0; */
+  /* font-size: 1rem; */
   background: rgba(0,0,0,.7); 
   margin: auto;
   text-align: center;
@@ -58,9 +73,10 @@
   align-items: center;
 }
 
-/* .project-title > p {
-  margin : 0;
-} */
+.project-title > p {
+  margin-bottom : 40px;
+  font-size: 20px;
+}
 
 /* .card > .tech-stack {
   font-size: 1.3rem;
@@ -73,28 +89,28 @@
   margin: 0;
 } */
 
-.card > img, .card > .project-title {
+/* .card > img, .card > .project-title {
   transition: 200ms ease-in-out;
-}
+} */
 
 /* Blur effect */
-.card:hover > img.blur {
+/* .card:hover > img.blur {
   filter: blur(5px);
-}
+} */
 
 /* Zoom effect */
-.card:hover > img.zoom {
+/* .card:hover > img.zoom {
   transform: scale(1.1);
-}
+} */
 
 /* Text fade */
-.card > .project-title.fade, .card > .tech-stack.fade {
+/* .card > .project-title.fade, .card > .tech-stack.fade {
   opacity: 0;
-}
+} */
 
-.card:hover > .project-title.fade, .card:hover > .tech-stack.fade {
+/* .card:hover > .project-title.fade, .card:hover > .tech-stack.fade {
   opacity: 1;
-}
+} */
 
 /* Modal */
 .modal {
@@ -136,6 +152,102 @@
   color: white;
 }
 
+.card .tech-stack {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 0.5rem;
+  margin-top: -30px;
+}
+
+.card.tech-stack .html {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #e5532d;
+  color: white;
+}
+
+.card .tech-stack .css {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #2d53e5;
+  color: white;
+}
+
+.card .tech-stack .javascript {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #f7e025;
+  color: black;
+}
+
+.card .tech-stack .php {
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  background: #556096;
+  color: white;
+}
+
+
+.card .tech-stack .svelte {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  background: #ff3e00;
+  color: white;
+}
+
+.card .tech-stack .tailwind-css {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  background: #0f172a;
+  color: #38bdf8;
+}
+
+/* SAIT Project Project */
+.pm-card .tech-stack {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 0.5rem;
+  margin-top: 10px;
+}
+
+.pm-card .tech-stack .svelte {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  background: #ff3e00;
+  color: white;
+}
+
+.pm-card .tech-stack .tailwind-css {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  background: #0f172a;
+  color: #38bdf8;
+}
+
+.pm-card .tech-stack .skeleton-ui {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  background: #423460;
+  color: #ffffff;
+}
+
 .modal-header > .title {
   font-size: 1.3rem;
   font-weight: bolder;
@@ -152,6 +264,7 @@
   gap: 0.5rem;
   margin-top: 10px;
 }
+
 
 .tech-stack .html {
   border: none;
@@ -290,14 +403,19 @@
     max-width: 100%;
   }
 
-  /* SAIT Partner Project */
-  .card > .pm {
-    height: 35vh;
-    width: 60vw;
-    margin-top: -20px;
+  .card-image {
+    width: 70vw;
   }
 
-  .project-title.fade > .pm-title {
+  .pm-card {
+    height: 47vh;
+  }
+
+  .pm-card .tech-stack {
+    margin-top: 10px;
+  }
+
+  .project-title > .pm-title {
     font-size: 20px;
     margin: auto;
   }
