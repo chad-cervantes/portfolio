@@ -370,7 +370,7 @@
   background-color: white;
 }
 
-#overlay {
+#overlay, #overlay-1, #overlay-2, #overlay-3 {
   position: fixed;
   top: 0; 
   left: 0;
@@ -382,10 +382,12 @@
 
   pointer-events: none;
 
-  transition: 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+
+  z-index: 1;
 }
 
-#overlay.active {
+#overlay.active, #overlay-1.active, #overlay-2.active, #overlay-3.active {
   opacity: 1;
   pointer-events: all;
 }
