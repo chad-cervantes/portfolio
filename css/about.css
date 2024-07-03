@@ -16,6 +16,7 @@
 
 p {
   margin: 20px;
+  font-size: 25px;
 }
 
 #particle-bg canvas {
@@ -35,7 +36,7 @@ p {
   }
 
   p {
-    font-size: 20px;
-    text-align: center;
+    font-size: 17px;
+    text-align: left;
   }
 }
