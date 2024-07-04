@@ -1,20 +1,34 @@
+// VW
+const vw = window.innerWidth;
+//VH
+const vh = window.innerHeight;
+console.log("Viewport Width: " + vw + "px" );
+console.log("Viewport Height: " + vh + "px");
+
+// OPENS AND CLOSES HAMBURGER MENU TOGGLE & CLICK ON ANY TAB
 // Hamburger Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
+  const menu_toggle = document.querySelector('.hamburger-menu')
   // Add click event listener to hamburger menu icon
-  document.querySelector('.hamburger-menu').addEventListener('click', function() {
+ menu_toggle.addEventListener('click', function() {
     // Toggle the 'active' class on the navbar
-    document.querySelector('.navbar').classList.toggle('active');
+    const active_nav = document.querySelector('.navbar')
+    active_nav.classList.toggle('active');
     // Toggle the 'closed' class on the menu toggle icon
-    document.querySelector('.hamburger-menu').classList.toggle('closed');
+    const closed_nav = document.querySelector('.hamburger-menu')
+    closed_nav.classList.toggle('closed');
   });
 
   // Add click event listeners to each menu item
-  document.querySelectorAll('.navbar .tab').forEach(function(menuItem) {
+  const tabs = document.querySelectorAll('.navbar .tab')
+  tabs.forEach(function(menuItem) {
     menuItem.addEventListener('click', function() {
       // Remove the 'active' class from the navbar
-      document.querySelector('.navbar').classList.remove('active');
+      const active_tab = document.querySelector('.navbar');
+      active_tab.classList.remove('active');
       // Remove the 'closed' class from the menu toggle icon
-      document.querySelector('.hamburger-menu').classList.remove('closed');
+      const closed_menu_toggle = document.querySelector('.hamburger-menu')
+      closed_menu_toggle.classList.remove('closed');
     });
   });
 });
@@ -36,17 +50,6 @@ window.addEventListener("load", () => {
 
 // Highlight that you're on the current section; used IntersectionObserver to be on the current when scrolling up or down
 
-// const tabs = document.querySelectorAll('.tab');
-
-// tabs.forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     // Remove 'active' class from all tabs
-//     tabs.forEach(t => t.classList.remove('active'));
-    
-//     // Add 'active' class to the clicked tab
-//     tab.classList.add('active');
-//   });
-// });
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.navbar ul li a');
@@ -134,118 +137,153 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+// CONTACT ME FORM 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const formData = new FormData(form);
+
+  fetch('http://localhost/portfolio/send_message.php', {
+    method: form.method,
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    const messageBox = document.getElementById('messageBox');
+    messageBox.style.display = 'block';
+
+    if (data.includes('Message sent successfully!')) {
+      messageBox.className = 'message-box success';
+      messageBox.textContent = 'Message sent successfully!';
+      form.reset();
+    } else {
+      messageBox.className = 'message-box error';
+      messageBox.textContent = data;
+    }
+  })
+  .catch(error => {
+    const messageBox = document.getElementById('messageBox');
+    messageBox.style.display = 'block';
+    messageBox.className = 'message-box error';
+    messageBox.textContent = 'An error occurred. Please try again later.';
+ });
+});
+
+
 /* ---- particles.js config ---- */
 
-particlesJS("particle-bg", {
-  "particles": {
-    "number": {
-      "value": 380,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
+// particlesJS("particle-bg", {
+//   "particles": {
+//     "number": {
+//       "value": 380,
+//       "density": {
+//         "enable": true,
+//         "value_area": 800
+//       }
+//     },
+//     "color": {
+//       "value": "#ff4500"
+//     },
+//     "shape": {
+//       "type": "circle",
+//       "stroke": {
+//         "width": 0,
+//         "color": "#000000"
+//       },
+//       "polygon": {
+//         "nb_sides": 5
+//       },
+//       "image": {
+//         "src": "img/github.svg",
+//         "width": 100,
+//         "height": 100
+//       }
+//     },
+//     "opacity": {
+//       "value": 0.5,
+//       "random": false,
+//       "anim": {
+//         "enable": false,
+//         "speed": 1,
+//         "opacity_min": 0.1,
+//         "sync": false
+//       }
+//     },
+//     "size": {
+//       "value": 3,
+//       "random": true,
+//       "anim": {
+//         "enable": false,
+//         "speed": 40,
+//         "size_min": 0.1,
+//         "sync": false
+//       }
+//     },
+//     "line_linked": {
+//       "enable": true,
+//       "distance": 150,
+//       "color": "#f7db4b",
+//       "opacity": 0.4,
+//       "width": 1
+//     },
+//     "move": {
+//       "enable": true,
+//       "speed": 6,
+//       "direction": "none",
+//       "random": false,
+//       "straight": false,
+//       "out_mode": "out",
+//       "bounce": false,
+//       "attract": {
+//         "enable": false,
+//         "rotateX": 600,
+//         "rotateY": 1200
+//       }
+//     }
+//   },
+//   "interactivity": {
+//     "detect_on": "canvas",
+//     "events": {
+//       "onhover": {
+//         "enable": true,
+//         "mode": "grab"
+//       },
+//       "onclick": {
+//         "enable": true,
+//         "mode": "push"
+//       },
+//       "resize": true
+//     },
+//     "modes": {
+//       "grab": {
+//         "distance": 140,
+//         "line_linked": {
+//           "opacity": 1
+//         }
+//       },
+//       "bubble": {
+//         "distance": 400,
+//         "size": 40,
+//         "duration": 2,
+//         "opacity": 8,
+//         "speed": 3
+//       },
+//       "repulse": {
+//         "distance": 200,
+//         "duration": 0.4
+//       },
+//       "push": {
+//         "particles_nb": 4
+//       },
+//       "remove": {
+//         "particles_nb": 2
+//       }
+//     }
+//   },
+//   "retina_detect": true
+// });
 
 
 /* ---- stats.js config ---- */
