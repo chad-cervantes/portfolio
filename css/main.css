@@ -105,7 +105,8 @@ footer .copyright {
   bottom: 80px;
   right: 1px;
   z-index: 30;
-  opacity: 0.8;font-size: 40px;
+  opacity: 0.8;
+  font-size: 40px;
   margin: auto;
 }
 
