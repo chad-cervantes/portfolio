@@ -62,7 +62,8 @@ header {
 .navbar ul li a {
   display: block; 
   color: white; 
-  font-size: 2.8vh; 
+  font-size: 3vh; 
+  font-weight: bolder;
   margin: 0 5px; 
   padding: 10px 25px; 
   border-radius: 6.5vw; 
