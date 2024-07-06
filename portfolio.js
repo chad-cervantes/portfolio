@@ -102,7 +102,20 @@ const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
-// Step 2: Make eventListeners
+// Step 2: Make functions
+function openModal(modal) {
+  if (modal == null) return 
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return 
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
+
+// Step 3: Make eventListeners
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     // dataset can access all of the data attributes as if they're javascript objects
@@ -125,18 +138,7 @@ overlay.addEventListener('click', () => {
   })
 })
 
-// Step 3: Make functions
-function openModal(modal) {
-  if (modal == null) return 
-  modal.classList.add('active')
-  overlay.classList.add('active')
-}
 
-function closeModal(modal) {
-  if (modal == null) return 
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-}
 
 // CONTACT ME FORM 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
