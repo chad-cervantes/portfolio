@@ -126,7 +126,7 @@ header {
     height: 0;
     width: 100vw;
     background: black;
-    transition: 0.2s;
+    transition: 0.3s;
     margin-top: -35px;
   }
 
@@ -142,13 +142,13 @@ header {
     margin: 80px auto 0 auto;
     margin-top: 200px;
     opacity: 0;
-    transition: 0.5s;
+    transition: 1s;
   }
 
   .navbar.active ul {
     display: block;
     opacity: 1;
-    transition: 0.5s;
+    transition: 1s;
   }
 
   .navbar ul li a {
