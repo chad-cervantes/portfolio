@@ -257,6 +257,27 @@
   margin-top: 10px;
 }
 
+.modal-header > .close-button {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 85px;
+  /* right: 10px; */
+}
+
+.modal-header > .close-button:hover {
+  color: red;
+  transition: 150ms ease-in-out;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  height: 200px;
+  max-height: 100%;
+  overflow-y: auto;
+}
 
 .tech-stack .html {
   border: none;
@@ -312,28 +333,6 @@
   padding: 5px 10px 5px 10px;
   background: #423460;
   color: #ffffff;
-}
-
-.modal-header > .close-button {
-  cursor: pointer;
-  outline: none;
-  background: none;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  margin-bottom: 85px;
-  /* right: 10px; */
-}
-
-.modal-header > .close-button:hover {
-  color: red;
-  transition: 150ms ease-in-out;
-}
-
-.modal-body {
-  padding: 10px 15px;
-  height: 200px;
-  max-height: 100%;
-  overflow-y: auto;
 }
 
 .project-ctas {
