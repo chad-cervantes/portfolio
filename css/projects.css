@@ -104,45 +104,7 @@
   opacity: 1;
 } */
 
-/* Modal */
-.modal {
-  position: fixed;
-  
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
 
-  border: 2px solid white;
-  border-radius: 10px;
-
-  z-index: 10;
-
-  background: rgba(0,0,0,.5);
-  background-color: #111111;
-
-  width: 700px;
-  height: 415px;
-  max-width: 95%;
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-bottom: 1px solid white;
-}
-
-.close-button {
-  color: white;
-}
 
 .card .tech-stack {
   font-size: 1rem;
@@ -240,6 +202,45 @@
   color: #ffffff;
 }
 
+/* Modal */
+.modal {
+  position: fixed;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  z-index: 10;
+
+  background: rgba(0,0,0,.5);
+  background-color: #111111;
+
+  width: 700px;
+  height: 415px;
+  max-width: 95%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid white;
+}
+
+.close-button {
+  color: white;
+}
 .modal-header > .title {
   font-size: 1.3rem;
   font-weight: bolder;
