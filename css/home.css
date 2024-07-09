@@ -21,6 +21,7 @@
 
 .resume-title {
   border: 2px solid white;
+  border-radius: 10px;
   padding: 15px;
   margin-top: 10px;
   margin-left: -30px;
