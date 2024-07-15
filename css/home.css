@@ -240,3 +240,67 @@ path:hover, a:hover {
     height: 50px;
   }
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 50rem) and (orientation: landscape) {
+  .home-section {
+    flex-direction: row;
+    /* gap: 20px; */
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 40vw; /* Adjust as needed */
+    border-radius: 50%;
+    margin-top: -75px;
+  }
+
+  .text-name {
+    font-size: 9vh;
+  }
+
+  .wrapper h3 {
+    font-size: 8vh;
+  }
+
+  /* .static-text {
+    margin-bottom: 2vh;
+  } */
+
+  .dynamic-texts li span {
+    font-size: 7vh;
+    /* margin-bottom: 2vh; */
+  }
+
+  .text-summary {
+    font-size: 6vh;
+    margin-top: 2vh;
+  }
+
+  .call-to-actions {
+    margin-left: 35px;
+  }
+
+  .call-to-actions a {
+    flex-direction: row;
+    padding: auto;
+  }
+
+  /* .call-to-actions div {
+    font-size: 25px;
+  } */
+
+  .resume-title {
+    border: 2px solid white;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: -30px;
+  }
+
+  .call-to-actions svg {
+    width: 50px;
+    height: 50px;
+  }
+}
